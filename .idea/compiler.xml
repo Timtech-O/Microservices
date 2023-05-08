@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="base-domains" />
+        <module name="emails-services" />
+        <module name="orders-services" />
+        <module name="stocks-services" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="base-domains" target="17" />
+      <module name="emails-services" target="17" />
+      <module name="orders-services" target="17" />
+      <module name="stocks-services" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="base-domains" options="-parameters" />
+      <module name="emails-services" options="-parameters" />
+      <module name="orders-services" options="-parameters" />
+      <module name="stocks-services" options="-parameters" />
+    </option>
+  </component>
+</project>
